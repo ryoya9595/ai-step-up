@@ -175,6 +175,7 @@ ul.avoid li::before { content: "✕"; color: #c0392b; font-weight: 700; position
 }
 .guide-btn:hover { background: var(--light-blue); text-decoration: none; box-shadow: 0 4px 12px rgba(46,109,164,.12); }
 .guide-btn::before { content: "📘"; font-size: 17px; }
+.guide-btn.video::before { content: "▶️"; }
 .guide-btn .arrow { margin-left: auto; color: var(--blue); font-weight: 700; }
 
 /* ===== Footer ===== */
