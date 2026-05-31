@@ -178,6 +178,20 @@ ul.avoid li::before { content: "✕"; color: #c0392b; font-weight: 700; position
 .guide-btn.video::before { content: "▶️"; }
 .guide-btn .arrow { margin-left: auto; color: var(--blue); font-weight: 700; }
 
+/* ===== Next courses ===== */
+.next-courses { margin-top: 26px; text-align: left; }
+.next-courses .nc-title { font-weight: 700; color: var(--blue-dark); font-size: 15px; margin-bottom: 12px; text-align: center; }
+.course-btn {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  background: linear-gradient(135deg, var(--blue), var(--blue-dark)); color: #fff;
+  font-weight: 700; font-size: 15px; padding: 15px 20px; border-radius: 12px;
+  margin: 10px 0; text-decoration: none;
+  box-shadow: 0 4px 12px rgba(46,109,164,.25);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.course-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(46,109,164,.32); text-decoration: none; }
+.course-btn .arrow { font-weight: 700; }
+
 /* ===== Footer ===== */
 .site-footer { text-align: center; padding: 32px 20px 48px; color: var(--muted); font-size: 13px; }
 
