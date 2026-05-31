@@ -191,6 +191,9 @@ ul.avoid li::before { content: "✕"; color: #c0392b; font-weight: 700; position
 }
 .course-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(46,109,164,.32); text-decoration: none; }
 .course-btn .arrow { font-weight: 700; }
+.course-btn.all { background: #fff; color: var(--blue-dark); border: 1px solid var(--blue); box-shadow: none; }
+.course-btn.all:hover { background: var(--light-blue); box-shadow: 0 4px 12px rgba(46,109,164,.12); }
+.course-btn.all .arrow { color: var(--blue); }
 
 /* ===== Footer ===== */
 .site-footer { text-align: center; padding: 32px 20px 48px; color: var(--muted); font-size: 13px; }
