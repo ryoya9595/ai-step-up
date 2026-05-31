@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI活用実践 5ステップマニュアル｜手を動かしながらAIを"使える"ようになる</title>
-<meta name="description" content="画像生成→動画生成→スライド作成→スキル作成→ツール作成。ChatGPT・Gemini・Codex・Claude Codeを使って、初心者が順番に手を動かしながらAIを身につける実践教材。">
+<meta name="description" content="画像生成→動画生成→スライド作成→スキル作成→ツール作成。ChatGPT・Gemini・Codex・Claude Codeを使って、初心者が順番に手を動かしながらAIを身につける実践マニュアル。">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -33,7 +33,7 @@
 
   <!-- イントロ -->
   <section class="block" id="intro">
-    <h2>5ステップでステップアップ</h2>
+    <h2>5段階でステップアップ</h2>
     <p>①→⑤の順に、だんだんできることが広がっていく構成です。①〜③はAIに「作ってもらう」体験、④〜⑤は自分用の「仕組みを作る」体験。気になるステップから読んでもOK。</p>
     <div class="table-wrap">
       <table>
@@ -49,7 +49,7 @@
     </div>
     <div class="callout info">
       <p><span class="strong">無料で試せます（2026年時点）</span></p>
-      <p>ChatGPT / Gemini … 無料プランでOK（画像・動画生成は回数制限あり）／ Google Flow … 無料枠あり（1日のクレジット制・720p・8秒・透かし入り）／ Codex … 無料ChatGPTでも「Codex Mini」が1日制限つきで試せる</p>
+      <p>ChatGPT / Gemini … 無料プランでOK（画像・動画生成は回数制限あり）／ Google Flow … 無料枠あり（非課金でも1日50クレジット・Veo 2／Lite中心）／ Codex … 期間限定で無料ChatGPTプランにも開放中。軽量版「Codex Mini」が1日制限つきで試せる</p>
     </div>
   </section>
 
@@ -63,31 +63,61 @@
       <li>「思った通りの画像」に近づける指示の出し方が分かる</li>
     </ul>
     <h3>なぜ画像生成から始める？</h3>
-    <p>AIの中でいちばん「結果が一瞬で目に見える」のが画像生成だから。コードも設定もいらず、チャットに文章を打つだけ。ここで「AIに指示を出す＝プロンプトを書く」感覚をつかんでおくと、このあとが全部ラクになります。ChatGPTでもGeminiでもOK、まずはどちらか1つで。</p>
-    <h3>やってみよう</h3>
-    <p>例として「AIセミナーの告知バナー」を作ります。チャット欄にこう打つ👇</p>
+    <p>AIの中でいちばん「結果が一瞬で目に見える」のが画像生成だから。コードも設定もいらず、チャットに文章を打つだけ。ここで「AIに指示を出す＝プロンプトを書く」感覚をつかんでおくと、このあとが全部ラクになります。</p>
+
+    <div class="ai-pick">
+      <div class="pick-label">🎨 このステップで使うAI</div>
+      <div class="pick-note">ChatGPT か Gemini、まずはどちらか1つでOK。下のボタンから開けます。</div>
+      <div class="btn-row">
+        <a class="ai-btn" href="https://chatgpt.com" target="_blank" rel="noopener">ChatGPTを開く</a>
+        <a class="ai-btn" href="https://gemini.google.com" target="_blank" rel="noopener">Geminiを開く</a>
+      </div>
+    </div>
+
+    <h3>やってみよう｜プロンプト例5つ</h3>
+    <p>下のプロンプトをコピーして貼り付け、出てきた画像を「もう少し明るく」「文字を消して」など<span class="strong">口語で修正</span>していくのが本番です。</p>
+
     <div class="prompt-card">
-      <div class="prompt-head"><span>プロンプト例</span><button class="copy-btn" data-target="p-s1">コピー</button></div>
-      <pre id="p-s1">AIセミナーの告知用バナー画像を作って。
+      <div class="prompt-head"><span>① セミナー告知バナー</span><button class="copy-btn" data-target="p-s1-1">コピー</button></div>
+      <pre id="p-s1-1">AIセミナーの告知用バナー画像を作って。
 横長で、青を基調にした清潔感のあるデザイン。
 ノートパソコンとグラフのイラストを入れて。
 文字は入れなくていい。</pre>
     </div>
-    <p>返ってきた画像を見て、<span class="strong">口語で修正</span>していくのが本番👇</p>
-    <div class="example-grid">
-      <div class="example">もう少し明るくして、もっとシンプルにしてほしい</div>
-      <div class="example">左下に人物のシルエットを足して</div>
-      <div class="example">全体をもう少しビジネスっぽく、落ち着いた雰囲気に</div>
+    <div class="prompt-card">
+      <div class="prompt-head"><span>② Instagram投稿の表紙</span><button class="copy-btn" data-target="p-s1-2">コピー</button></div>
+      <pre id="p-s1-2">Instagram投稿の表紙に使う背景画像を作って。
+正方形、パステル調でやわらかい雰囲気。
+右下に小さく観葉植物。
+あとで文字を乗せるので、中央は余白を広めにして。</pre>
     </div>
-    <p>2〜3回くり返すとイメージに近づきます。気に入ったら保存。</p>
+    <div class="prompt-card">
+      <div class="prompt-head"><span>③ ブログ／noteのアイキャッチ</span><button class="copy-btn" data-target="p-s1-3">コピー</button></div>
+      <pre id="p-s1-3">ブログ記事のアイキャッチ画像を作って。
+テーマは「副業の始め方」。
+横長で、明るくポジティブな印象。
+人物は入れず、コインと矢印のシンプルなイラストで。</pre>
+    </div>
+    <div class="prompt-card">
+      <div class="prompt-head"><span>④ プロフィールアイコンのベース</span><button class="copy-btn" data-target="p-s1-4">コピー</button></div>
+      <pre id="p-s1-4">SNSのプロフィールアイコンに使うイラストを作って。
+正方形、フラットでシンプルなデザイン。
+コーヒーカップをモチーフに、背景は淡いベージュ1色。</pre>
+    </div>
+    <div class="prompt-card">
+      <div class="prompt-head"><span>⑤ 商品紹介の背景画像</span><button class="copy-btn" data-target="p-s1-5">コピー</button></div>
+      <pre id="p-s1-5">化粧品の商品紹介に使う背景画像を作って。
+高級感のある白〜ベージュのグラデーション。
+中央に商品を置けるよう、まわりに余白と柔らかい影。
+小物として花びらを少しだけ散らして。</pre>
+    </div>
+
     <h3>つまづきポイント＆コツ</h3>
     <ul class="avoid">
       <li>「かっこいい画像作って」だけ → 抽象的すぎて毎回バラバラに</li>
     </ul>
     <p><span class="strong">⭕ 4点セットで指定すると安定：</span>①用途 ②雰囲気 ③入れる要素 ④色</p>
-    <div class="callout warn"><strong>文字は苦手</strong>画像内の日本語文字は崩れやすい。タイトル文字はあとからCanva等で乗せる前提が安全。無料プランは生成回数に上限あり。</div>
-    <h3>完成イメージ／作例</h3>
-    <ul><li>Instagram投稿の表紙・告知バナー・ブログのアイキャッチ・アイコンのベース</li></ul>
+    <div class="callout warn"><strong>文字は苦手</strong>無料版のAIだと画像内の日本語文字は崩れやすい。タイトル文字はあとからCanva等で乗せる前提が安全。無料プランは生成回数に上限あり。</div>
   </section>
 
   <!-- STEP2 -->
@@ -100,24 +130,57 @@
       <li>SNSの背景動画や、商品・サービスの短い紹介クリップが自作できる</li>
     </ul>
     <h3>なぜ Gemini / Flow？</h3>
-    <p>STEP①の静止画を「動かす」番。Googleの <span class="strong">Veo</span> という技術で文章から動画が作れます。手軽さ重視なら <span class="strong">Gemini</span>、動画を作り込みたいなら専用画面の <span class="strong">Google Flow</span>（無料枠あり）。まずはどちらか1つで。</p>
-    <h3>やってみよう</h3>
-    <p>例として「夕暮れの海辺を歩く後ろ姿」の8秒クリップを作ります。</p>
+    <p>STEP①の静止画を「動かす」番。Googleの <span class="strong">Veo</span> という技術で文章から動画が作れます。手軽さ重視なら <span class="strong">Gemini</span>、動画を作り込みたいなら専用画面の <span class="strong">Google Flow</span>。</p>
+
+    <div class="ai-pick">
+      <div class="pick-label">🎬 このステップで使うAI</div>
+      <div class="pick-note">まずは手軽な Gemini で1本。慣れたら動画専用の Google Flow（無料枠：1日50クレジット）へ。</div>
+      <div class="btn-row">
+        <a class="ai-btn" href="https://gemini.google.com" target="_blank" rel="noopener">Geminiを開く</a>
+        <a class="ai-btn" href="https://labs.google/flow" target="_blank" rel="noopener">Google Flowを開く</a>
+      </div>
+    </div>
+
+    <h3>やってみよう｜プロンプト例5つ</h3>
+    <p>「もう少し明るい時間帯に」「カメラの動きをゆっくりに」など、出てきた動画を口語で修正していきます。</p>
+
     <div class="prompt-card">
-      <div class="prompt-head"><span>プロンプト例（Gemini）</span><button class="copy-btn" data-target="p-s2">コピー</button></div>
-      <pre id="p-s2">夕暮れの海辺を、後ろ姿で歩いている人の8秒の動画を作って。
+      <div class="prompt-head"><span>① 夕暮れの海辺（後ろ姿）</span><button class="copy-btn" data-target="p-s2-1">コピー</button></div>
+      <pre id="p-s2-1">夕暮れの海辺を、後ろ姿で歩いている人の8秒の動画を作って。
 シネマティックで、波の音が聞こえてきそうな雰囲気。
 カメラはゆっくり後ろから追いかける感じで。</pre>
     </div>
-    <p>「もう少し明るい時間帯に」「カメラの動きをゆっくりに」など口語で修正 → 気に入ったらダウンロード。</p>
+    <div class="prompt-card">
+      <div class="prompt-head"><span>② コーヒーを淹れる手元</span><button class="copy-btn" data-target="p-s2-2">コピー</button></div>
+      <pre id="p-s2-2">コーヒーをドリップしている手元のアップを8秒の動画で作って。
+湯気がふわっと立ちのぼる、あたたかい朝の雰囲気。
+カメラは固定で、ゆっくりとした動き。</pre>
+    </div>
+    <div class="prompt-card">
+      <div class="prompt-head"><span>③ 商品をくるっと見せる</span><button class="copy-btn" data-target="p-s2-3">コピー</button></div>
+      <pre id="p-s2-3">白い背景の上で、化粧品のボトルがゆっくり360度回転する8秒の動画。
+清潔感があって高級感のあるライティング。
+余計な物は置かず、商品だけを引き立てて。</pre>
+    </div>
+    <div class="prompt-card">
+      <div class="prompt-head"><span>④ 都会の夜景（タイムラプス風）</span><button class="copy-btn" data-target="p-s2-4">コピー</button></div>
+      <pre id="p-s2-4">都会の夜景を見下ろす8秒の動画。
+車のライトが流れるタイムラプス風で、上品でスタイリッシュ。
+SNSの背景クリップに使える雰囲気で。</pre>
+    </div>
+    <div class="prompt-card">
+      <div class="prompt-head"><span>⑤ 観葉植物に光が差す癒し系</span><button class="copy-btn" data-target="p-s2-5">コピー</button></div>
+      <pre id="p-s2-5">窓辺の観葉植物に、朝の光がやわらかく差し込む8秒の動画。
+ゆっくり葉が揺れる、癒し系でナチュラルな雰囲気。
+カメラはほんの少しだけ寄っていく動き。</pre>
+    </div>
+
     <h3>つまづきポイント＆コツ</h3>
     <ul>
       <li><span class="strong">無料枠の制限：</span>8秒・720p・「Made with Veo」の透かし入り。Flowは1日のクレジット上限あり</li>
       <li><span class="strong">動きは"ひとつ"に絞る：</span>「歩く」など動作を1つにすると安定。盛り込みすぎると崩れる</li>
       <li>長尺は苦手 → まず数秒の1カットで成功体験を。文字テロップは編集アプリで後乗せが安全</li>
     </ul>
-    <h3>完成イメージ／作例</h3>
-    <ul><li>リール／TikTokの背景クリップ・商品紹介動画・告知のオープニング数秒</li></ul>
   </section>
 
   <!-- STEP3 -->
@@ -131,22 +194,52 @@
     </ul>
     <h3>なぜ ChatGPT / Gemini？</h3>
     <p>スライドで時間がかかるのは「構成」と「各ページの文章」。ここをAIに任せると一気にラクに。<span class="strong">構成→中身</span>の順で作るのがコツです。</p>
-    <h3>やってみよう</h3>
-    <p>例として「SNS運用サービスの提案スライド」。まず<span class="strong">構成（目次）</span>から👇</p>
+
+    <div class="ai-pick">
+      <div class="pick-label">📊 このステップで使うAI</div>
+      <div class="pick-note">構成と文章はChatGPT/Geminiで作り、見た目はGoogleスライドやCanvaで整えます。</div>
+      <div class="btn-row">
+        <a class="ai-btn" href="https://chatgpt.com" target="_blank" rel="noopener">ChatGPTを開く</a>
+        <a class="ai-btn" href="https://gemini.google.com" target="_blank" rel="noopener">Geminiを開く</a>
+      </div>
+    </div>
+
+    <h3>やってみよう｜プロンプト例5つ</h3>
+    <p>まず①で構成（目次）を作り、OKを出してから②で中身を作るのが失敗しないコツです。</p>
+
     <div class="prompt-card">
-      <div class="prompt-head"><span>プロンプト例①（構成）</span><button class="copy-btn" data-target="p-s3a">コピー</button></div>
-      <pre id="p-s3a">SNS運用代行サービスの提案スライドを作りたい。
+      <div class="prompt-head"><span>① 提案スライドの構成</span><button class="copy-btn" data-target="p-s3-1">コピー</button></div>
+      <pre id="p-s3-1">SNS運用代行サービスの提案スライドを作りたい。
 相手は美容サロンのオーナー。全8枚くらいで、
 表紙→課題→解決策→事例→料金→次のステップ、の流れで
 スライドの構成（各ページのタイトルと内容の要点）を作って。</pre>
     </div>
-    <p>構成にOKを出したら、1枚ずつ中身を作らせる👇</p>
     <div class="prompt-card">
-      <div class="prompt-head"><span>プロンプト例②（中身）</span><button class="copy-btn" data-target="p-s3b">コピー</button></div>
-      <pre id="p-s3b">3枚目「解決策」のページの本文を、箇条書き3つで作って。
+      <div class="prompt-head"><span>② 1ページの中身</span><button class="copy-btn" data-target="p-s3-2">コピー</button></div>
+      <pre id="p-s3-2">3枚目「解決策」のページの本文を、箇条書き3つで作って。
 1行は短く、専門用語は使わないで。</pre>
     </div>
-    <p>出てきた文章を Googleスライド や Canva に貼って整えれば完成。</p>
+    <div class="prompt-card">
+      <div class="prompt-head"><span>③ 自己紹介スライドの構成</span><button class="copy-btn" data-target="p-s3-3">コピー</button></div>
+      <pre id="p-s3-3">初対面の経営者向けに、自己紹介スライドを作りたい。
+全5枚で、名前と実績→できること→お客様の声→料金→連絡先、
+の流れで各ページのタイトルと要点を作って。
+信頼感が伝わるトーンで。</pre>
+    </div>
+    <div class="prompt-card">
+      <div class="prompt-head"><span>④ セミナー資料の構成</span><button class="copy-btn" data-target="p-s3-4">コピー</button></div>
+      <pre id="p-s3-4">「初心者向けAI活用セミナー」の登壇資料を作りたい。
+60分・全15枚くらいを想定。
+つかみ→AIでできること→実演→受講者の次の一歩、
+の流れで構成案を作って。</pre>
+    </div>
+    <div class="prompt-card">
+      <div class="prompt-head"><span>⑤ 話す原稿（台本）にする</span><button class="copy-btn" data-target="p-s3-5">コピー</button></div>
+      <pre id="p-s3-5">さっき作ったスライドの構成をもとに、
+各ページで実際に話す原稿を、話し言葉で作って。
+1ページあたり30秒〜40秒で話せる分量で。</pre>
+    </div>
+
     <h3>つまづきポイント＆コツ</h3>
     <ul>
       <li><span class="strong">AIは文字を詰め込みすぎる：</span>「1スライド＝メッセージ1つ」「1行は短く」と指示して削る</li>
@@ -160,22 +253,61 @@
     <div class="badge-row"><span class="badge">STEP 04</span><span class="tool-tag">Codex（メイン）/ Claude Code</span></div>
     <h2>スキル作成 — 自分の作業をAIに覚えさせる</h2>
     <h3>「スキル」ってなに？</h3>
-    <p>毎回ゼロから指示せず、<span class="strong">「この作業はいつもこうやる」という手順をAIに登録</span>しておくこと。一度作れば「あれやって」の一言で同じ品質の作業が返ってきます。例：議事録の整形、todoの優先度づけ、SNS投稿文のテンプレ化。ここからは<span class="strong">作業のやり方そのものをAIに持たせる</span>段階です。</p>
-    <div class="callout info"><p>Codexは無料ChatGPTプランでも「Codex Mini」が1日制限つきで試せます。まず無料で触ってみるのに最適。</p></div>
-    <h3>やってみよう（Codexメイン）</h3>
-    <p>例として「メモを決まった形式の議事録に整える」スキル。まず手順を言葉にする👇</p>
+    <p>毎回ゼロから指示せず、<span class="strong">「この作業はいつもこうやる」という手順をAIに登録</span>しておくこと。一度作れば「あれやって」の一言で同じ品質の作業が返ってきます。ここからは<span class="strong">作業のやり方そのものをAIに持たせる</span>段階です。</p>
+    <div class="callout info"><p>Codexは<span class="strong">期間限定</span>で無料ChatGPTプランにも開放中。軽量版「Codex Mini」が1日制限つきで試せます（ChatGPTアカウントでサインイン。macOSのCodexアプリでも同じアカウントで使えます）。まず無料で触ってみるのに最適。</p></div>
+
+    <div class="ai-pick">
+      <div class="pick-label">🛠 このステップで使うAI</div>
+      <div class="pick-note">まず無料で触るなら Codex。保存・呼び出しの仕組みをしっかり使うなら Claude Code。</div>
+      <div class="btn-row">
+        <a class="ai-btn" href="https://chatgpt.com/codex" target="_blank" rel="noopener">Codexを開く</a>
+        <a class="ai-btn" href="https://claude.com/claude-code" target="_blank" rel="noopener">Claude Codeを見る</a>
+      </div>
+    </div>
+
+    <div class="guides">
+      <div class="pick-label">📘 つまずいたら、この導入ガイド</div>
+      <a class="guide-btn" href="https://ryoya9595.github.io/codex-ai-secretary-manual-client/" target="_blank" rel="noopener">「ChatGPT Codex」導入マニュアル<span class="arrow">→</span></a>
+      <a class="guide-btn" href="https://utage-system.com/members/zT66X07UciKh/course/uPGqpwg0Y5U0/lesson/OoQTzL6Q9vS5" target="_blank" rel="noopener">デスクトップ版「Claude Code」画面の使い方<span class="arrow">→</span></a>
+      <a class="guide-btn" href="https://utage-system.com/members/zT66X07UciKh/course/uPGqpwg0Y5U0/lesson/yFdA09X26WuR" target="_blank" rel="noopener">Claude CodeのSkills機能で作業を半自動化する方法<span class="arrow">→</span></a>
+    </div>
+
+    <h3>やってみよう｜プロンプト例5つ</h3>
+    <p>まず「やり方」を言葉にして渡し、スキルとして保存 → 次からは一言で呼び出します。</p>
+
     <div class="prompt-card">
-      <div class="prompt-head"><span>プロンプト例</span><button class="copy-btn" data-target="p-s4">コピー</button></div>
-      <pre id="p-s4">打ち合わせのメモを渡すので、いつも同じフォーマットの議事録に
+      <div class="prompt-head"><span>① 議事録フォーマット整形</span><button class="copy-btn" data-target="p-s4-1">コピー</button></div>
+      <pre id="p-s4-1">打ち合わせのメモを渡すので、いつも同じフォーマットの議事録に
 整えるスキルを作りたい。フォーマットは
 「日時／参加者／決まったこと／次のアクション」の4項目。
-この作業をいつでも呼び出せるようにしたい。</pre>
+この作業をいつでも呼び出せるようにして。</pre>
     </div>
-    <p>Codexが手順・テンプレを提案 → 保存。次からは<span class="strong">メモを貼って「議事録にして」</span>と言うだけ。ズレたら一言で微調整して育てます。</p>
-    <div class="callout tip">
-      <p><span class="strong">💡 Claude Code でやる場合</span></p>
-      <p>Claude Codeには <span class="strong">Skills</span> という仕組みがあり、手順を1つのスキルとして保存 → <code>/スキル名</code> で呼び出せます。やり方の核は同じ（言葉にする→保存→呼び出して育てる）。まず無料で触るなら Codex、保存・呼び出しをしっかり使うなら Claude Code。</p>
+    <div class="prompt-card">
+      <div class="prompt-head"><span>② todoの優先度づけ</span><button class="copy-btn" data-target="p-s4-2">コピー</button></div>
+      <pre id="p-s4-2">やることを箇条書きで渡すので、
+「緊急度×重要度」で並べ替えて、今日やるべき3つを選んでくれる
+スキルを作って。理由も一言ずつ添えて。</pre>
     </div>
+    <div class="prompt-card">
+      <div class="prompt-head"><span>③ SNS投稿文のテンプレ化</span><button class="copy-btn" data-target="p-s4-3">コピー</button></div>
+      <pre id="p-s4-3">商品名と特徴を渡すと、Instagram投稿文を作るスキルを作りたい。
+構成は「共感の一言→ベネフィット3つ→行動の呼びかけ→ハッシュタグ5個」。
+親しみやすい口調で。</pre>
+    </div>
+    <div class="prompt-card">
+      <div class="prompt-head"><span>④ 問い合わせ返信の下書き</span><button class="copy-btn" data-target="p-s4-4">コピー</button></div>
+      <pre id="p-s4-4">お客様からの問い合わせ文を貼ると、
+ていねいな返信の下書きを作るスキルを作って。
+「お礼→回答→次のご案内→締めの挨拶」の流れで、
+かたすぎない敬語で。</pre>
+    </div>
+    <div class="prompt-card">
+      <div class="prompt-head"><span>⑤ 日報フォーマット</span><button class="copy-btn" data-target="p-s4-5">コピー</button></div>
+      <pre id="p-s4-5">その日やったことを箇条書きで渡すと、
+「今日の成果／気づき／明日やること」の3項目に整理した
+日報にしてくれるスキルを作って。</pre>
+    </div>
+
     <h3>つまづきポイント＆コツ</h3>
     <ul>
       <li>いきなり大きな自動化を狙わない。「1作業＝1スキル」で小さく</li>
@@ -190,22 +322,64 @@
     <h2>ツール作成 — ブラウザで動く小さなツールを1個作る</h2>
     <h3>最後はなぜ「ツール作成」？</h3>
     <p>ここまでの成果物・スキルに続いて、最後は<span class="strong">「人に使ってもらえるもの」</span>を作ります。今はHTMLファイル1枚で動く小さなツールなら、コードを書けなくても<span class="strong">「○○なツールを作って」と頼むだけ</span>で形になります。</p>
-    <div class="callout info"><p>Codexは無料の「Codex Mini」から試せます。まず無料で1個作ってみましょう。</p></div>
-    <h3>やってみよう（Codexメイン）</h3>
-    <p>例として「SNS投稿の文字数カウンター」。ポイントは<span class="strong">「HTML1ファイルで」</span>と添えること👇</p>
+    <div class="callout info"><p>Codexは<span class="strong">期間限定</span>で無料の「Codex Mini」から試せます。まず無料で1個作ってみましょう。</p></div>
+
+    <div class="ai-pick">
+      <div class="pick-label">⚙️ このステップで使うAI</div>
+      <div class="pick-note">まず無料で1個作るなら Codex。保存や動作確認まで任せたいなら Claude Code。</div>
+      <div class="btn-row">
+        <a class="ai-btn" href="https://chatgpt.com/codex" target="_blank" rel="noopener">Codexを開く</a>
+        <a class="ai-btn" href="https://claude.com/claude-code" target="_blank" rel="noopener">Claude Codeを見る</a>
+      </div>
+    </div>
+
+    <div class="guides">
+      <div class="pick-label">📘 つまずいたら、この導入ガイド</div>
+      <a class="guide-btn" href="https://ryoya9595.github.io/codex-ai-secretary-manual-client/" target="_blank" rel="noopener">「ChatGPT Codex」導入マニュアル<span class="arrow">→</span></a>
+      <a class="guide-btn" href="https://utage-system.com/members/zT66X07UciKh/course/uPGqpwg0Y5U0/lesson/OoQTzL6Q9vS5" target="_blank" rel="noopener">デスクトップ版「Claude Code」画面の使い方<span class="arrow">→</span></a>
+      <a class="guide-btn" href="https://utage-system.com/members/zT66X07UciKh/course/uPGqpwg0Y5U0/lesson/9z2mD9nzUimP" target="_blank" rel="noopener">Claude Codeにブラウザ操作をさせる拡張機能<span class="arrow">→</span></a>
+    </div>
+
+    <h3>やってみよう｜プロンプト例5つ</h3>
+    <p>ポイントは<span class="strong">「HTML1ファイルで作って」</span>と添えること。1ファイル完結だと保存して開くだけで動きます。</p>
+
     <div class="prompt-card">
-      <div class="prompt-head"><span>プロンプト例</span><button class="copy-btn" data-target="p-s5">コピー</button></div>
-      <pre id="p-s5">SNS投稿用の文字数カウンターを、HTML1ファイルで作って。
+      <div class="prompt-head"><span>① 文字数カウンター</span><button class="copy-btn" data-target="p-s5-1">コピー</button></div>
+      <pre id="p-s5-1">SNS投稿用の文字数カウンターを、HTML1ファイルで作って。
 ・テキストを入力すると、今の文字数がリアルタイムで表示される
 ・280文字を超えたら赤字で警告
 ・スマホでも見やすいシンプルなデザイン
 コードを全部まとめて1つのファイルにして。</pre>
     </div>
-    <p>出てきたコードを <code>counter.html</code> で保存 → ダブルクリックでブラウザが開き、動きます。「色を青に」「コピーボタンを足して」など使いながら改良。</p>
-    <div class="callout tip">
-      <p><span class="strong">💡 Claude Code でやる場合</span></p>
-      <p>Claude Codeは、ファイルの作成・保存・動作確認まで自分でやってくれます。「○○なツールを作って」→ 作って確認まで。その場で「ここ直して」で書き換えてくれます。まず無料で1個なら Codex、保存や確認まで任せたいなら Claude Code。</p>
+    <div class="prompt-card">
+      <div class="prompt-head"><span>② ハッシュタグ生成ツール</span><button class="copy-btn" data-target="p-s5-2">コピー</button></div>
+      <pre id="p-s5-2">キーワードを入れるとハッシュタグ候補を出すツールを、HTML1ファイルで作って。
+・キーワードを入力して「生成」を押すと、関連ハッシュタグを10個表示
+・各タグにコピーボタン
+・スマホ対応のシンプルなデザイン</pre>
     </div>
+    <div class="prompt-card">
+      <div class="prompt-head"><span>③ 割り勘計算ツール</span><button class="copy-btn" data-target="p-s5-3">コピー</button></div>
+      <pre id="p-s5-3">飲み会の割り勘計算ツールを、HTML1ファイルで作って。
+・合計金額と人数を入力すると、1人あたりの金額を表示
+・100円単位で切り上げる切り替えスイッチ付き
+・大きく見やすい数字で表示</pre>
+    </div>
+    <div class="prompt-card">
+      <div class="prompt-head"><span>④ 簡易見積もりツール</span><button class="copy-btn" data-target="p-s5-4">コピー</button></div>
+      <pre id="p-s5-4">SNS運用代行の簡易見積もりツールを、HTML1ファイルで作って。
+・「投稿数」「動画編集の有無」などを選ぶと概算金額が出る
+・最後に合計金額を大きく表示
+・落ち着いた青基調のデザインで</pre>
+    </div>
+    <div class="prompt-card">
+      <div class="prompt-head"><span>⑤ チェックリスト／診断</span><button class="copy-btn" data-target="p-s5-5">コピー</button></div>
+      <pre id="p-s5-5">「AI活用度チェック」の簡単な診断ツールを、HTML1ファイルで作って。
+・5つの質問にはい/いいえで答える
+・最後にスコアと一言コメントを表示
+・スマホで使いやすいシンプルなデザイン</pre>
+    </div>
+
     <h3>つまづきポイント＆コツ</h3>
     <ul>
       <li><span class="strong">「HTML1ファイルで」と頼む：</span>1ファイル完結が初心者には扱いやすい</li>
