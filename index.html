@@ -10,80 +10,223 @@
 <body>
 
 <header class="hero">
-  <div class="wrap">
+  <div class="hero-inner">
     <span class="eyebrow">AI STEP-UP — 5つの実践ステップ</span>
-    <h1>手を動かしながら、<br><span class="grad">AIを"使える"ようになる</span></h1>
-    <p>読むだけで終わらせない。各ステップで必ず「自分の手で1個作る」。<br>画像から始めて、最後は自分専用のツールを作るところまで。</p>
+    <h1>手を動かしながら、AIを"使える"ようになる</h1>
+    <p class="subtitle">読むだけで終わらせない。各ステップで必ず「自分の手で1個作る」。画像から始めて、最後は自分専用のツールを作るところまで。</p>
   </div>
 </header>
 
-<main>
-<section class="wrap">
-  <h2 class="section-title">5つのステップ</h2>
-  <p class="section-sub">①→⑤の順に、だんだんステップアップしていく構成です。気になるステップから読んでもOK。</p>
+<nav class="toc">
+  <div class="toc-inner">
+    <span class="toc-title">目次</span>
+    <a href="#intro">はじめに</a>
+    <a href="#step1">① 画像生成</a>
+    <a href="#step2">② 動画生成</a>
+    <a href="#step3">③ スライド作成</a>
+    <a href="#step4">④ スキル作成</a>
+    <a href="#step5">⑤ ツール作成</a>
+  </div>
+</nav>
 
-  <div class="steps">
-    <a class="step-card" href="step1.html">
-      <span class="step-num">STEP 01</span>
-      <h3>画像生成</h3>
-      <span class="tools">ChatGPT / Gemini など</span>
-      <p class="goal">文章を打つだけで、SNS投稿に使える画像を1枚作る。</p>
-      <span class="arrow">→</span>
-    </a>
+<main class="content">
 
-    <a class="step-card" href="step2.html">
-      <span class="step-num">STEP 02</span>
-      <h3>動画生成</h3>
-      <span class="tools">Gemini / Google Flow</span>
-      <p class="goal">テキストから、数秒のショート動画を1本作る。</p>
-      <span class="arrow">→</span>
-    </a>
-
-    <a class="step-card" href="step3.html">
-      <span class="step-num">STEP 03</span>
-      <h3>スライド作成</h3>
-      <span class="tools">ChatGPT / Gemini など</span>
-      <p class="goal">テーマを伝えるだけで、提案・自己紹介スライドを1セット作る。</p>
-      <span class="arrow">→</span>
-    </a>
-
-    <a class="step-card" href="step4.html">
-      <span class="step-num">STEP 04</span>
-      <h3>スキル作成</h3>
-      <span class="tools">Codex / Claude Code</span>
-      <p class="goal">いつもの定型作業を、AIに「スキル」として覚えさせる。</p>
-      <span class="arrow">→</span>
-    </a>
-
-    <a class="step-card" href="step5.html">
-      <span class="step-num">STEP 05</span>
-      <h3>ツール作成</h3>
-      <span class="tools">Codex / Claude Code</span>
-      <p class="goal">頼むだけで、ブラウザで動く小さなツールを1個作る。</p>
-      <span class="arrow">→</span>
-    </a>
-
-    <div class="step-card" style="background:transparent;border-style:dashed;">
-      <span class="step-num" style="color:var(--text-dim)">GOAL</span>
-      <h3>自分の仕事に組み合わせる</h3>
-      <p class="goal">5ステップを体験したら、あとは自分の業務に置き換えて作り直すだけ。</p>
+  <!-- イントロ -->
+  <section class="block" id="intro">
+    <h2>5ステップでステップアップ</h2>
+    <p>①→⑤の順に、だんだんできることが広がっていく構成です。①〜③はAIに「作ってもらう」体験、④〜⑤は自分用の「仕組みを作る」体験。気になるステップから読んでもOK。</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>STEP</th><th>テーマ</th><th>使うAI</th><th>作るもの</th></tr></thead>
+        <tbody>
+          <tr><td>①</td><td>画像生成</td><td>ChatGPT / Gemini など</td><td>SNS投稿用の画像を1枚</td></tr>
+          <tr><td>②</td><td>動画生成</td><td>Gemini / Google Flow</td><td>数秒のショート動画を1本</td></tr>
+          <tr><td>③</td><td>スライド作成</td><td>ChatGPT / Gemini など</td><td>提案・自己紹介スライドを1セット</td></tr>
+          <tr><td>④</td><td>スキル作成</td><td>Codex / Claude Code</td><td>作業を自動化するスキルを1個</td></tr>
+          <tr><td>⑤</td><td>ツール作成</td><td>Codex / Claude Code</td><td>ブラウザで動くツールを1個</td></tr>
+        </tbody>
+      </table>
     </div>
-  </div>
+    <div class="callout info">
+      <p><span class="strong">無料で試せます（2026年時点）</span></p>
+      <p>ChatGPT / Gemini … 無料プランでOK（画像・動画生成は回数制限あり）／ Google Flow … 無料枠あり（1日のクレジット制・720p・8秒・透かし入り）／ Codex … 無料ChatGPTでも「Codex Mini」が1日制限つきで試せる</p>
+    </div>
+  </section>
 
-  <div class="note">
-    <h4>無料で試せます（2026年時点）</h4>
+  <!-- STEP1 -->
+  <section class="block" id="step1">
+    <div class="badge-row"><span class="badge">STEP 01</span><span class="tool-tag">ChatGPT / Gemini など</span></div>
+    <h2>画像生成 — AIで「使える画像」を1枚作る</h2>
+    <h3>このステップでできるようになること</h3>
     <ul>
-      <li>ChatGPT / Gemini … 無料プランでOK（画像・動画生成は回数制限あり）</li>
-      <li>Google Flow … 無料枠あり。1日のクレジット制／出力は720p・8秒・透かし入り</li>
-      <li>Codex … 無料ChatGPTでも「Codex Mini」が1日制限つきで試せる</li>
+      <li>文章（プロンプト）を打つだけで、SNS投稿やバナーに使える画像を作れる</li>
+      <li>「思った通りの画像」に近づける指示の出し方が分かる</li>
     </ul>
-  </div>
-</section>
+    <h3>なぜ画像生成から始める？</h3>
+    <p>AIの中でいちばん「結果が一瞬で目に見える」のが画像生成だから。コードも設定もいらず、チャットに文章を打つだけ。ここで「AIに指示を出す＝プロンプトを書く」感覚をつかんでおくと、このあとが全部ラクになります。ChatGPTでもGeminiでもOK、まずはどちらか1つで。</p>
+    <h3>やってみよう</h3>
+    <p>例として「AIセミナーの告知バナー」を作ります。チャット欄にこう打つ👇</p>
+    <div class="prompt-card">
+      <div class="prompt-head"><span>プロンプト例</span><button class="copy-btn" data-target="p-s1">コピー</button></div>
+      <pre id="p-s1">AIセミナーの告知用バナー画像を作って。
+横長で、青を基調にした清潔感のあるデザイン。
+ノートパソコンとグラフのイラストを入れて。
+文字は入れなくていい。</pre>
+    </div>
+    <p>返ってきた画像を見て、<span class="strong">口語で修正</span>していくのが本番👇</p>
+    <div class="example-grid">
+      <div class="example">もう少し明るくして、もっとシンプルにしてほしい</div>
+      <div class="example">左下に人物のシルエットを足して</div>
+      <div class="example">全体をもう少しビジネスっぽく、落ち着いた雰囲気に</div>
+    </div>
+    <p>2〜3回くり返すとイメージに近づきます。気に入ったら保存。</p>
+    <h3>つまづきポイント＆コツ</h3>
+    <ul class="avoid">
+      <li>「かっこいい画像作って」だけ → 抽象的すぎて毎回バラバラに</li>
+    </ul>
+    <p><span class="strong">⭕ 4点セットで指定すると安定：</span>①用途 ②雰囲気 ③入れる要素 ④色</p>
+    <div class="callout warn"><strong>文字は苦手</strong>画像内の日本語文字は崩れやすい。タイトル文字はあとからCanva等で乗せる前提が安全。無料プランは生成回数に上限あり。</div>
+    <h3>完成イメージ／作例</h3>
+    <ul><li>Instagram投稿の表紙・告知バナー・ブログのアイキャッチ・アイコンのベース</li></ul>
+  </section>
+
+  <!-- STEP2 -->
+  <section class="block" id="step2">
+    <div class="badge-row"><span class="badge">STEP 02</span><span class="tool-tag">Gemini / Google Flow</span></div>
+    <h2>動画生成 — AIで数秒のショート動画を1本作る</h2>
+    <h3>このステップでできるようになること</h3>
+    <ul>
+      <li>文章を打つだけで、数秒のショート動画を作れる</li>
+      <li>SNSの背景動画や、商品・サービスの短い紹介クリップが自作できる</li>
+    </ul>
+    <h3>なぜ Gemini / Flow？</h3>
+    <p>STEP①の静止画を「動かす」番。Googleの <span class="strong">Veo</span> という技術で文章から動画が作れます。手軽さ重視なら <span class="strong">Gemini</span>、動画を作り込みたいなら専用画面の <span class="strong">Google Flow</span>（無料枠あり）。まずはどちらか1つで。</p>
+    <h3>やってみよう</h3>
+    <p>例として「夕暮れの海辺を歩く後ろ姿」の8秒クリップを作ります。</p>
+    <div class="prompt-card">
+      <div class="prompt-head"><span>プロンプト例（Gemini）</span><button class="copy-btn" data-target="p-s2">コピー</button></div>
+      <pre id="p-s2">夕暮れの海辺を、後ろ姿で歩いている人の8秒の動画を作って。
+シネマティックで、波の音が聞こえてきそうな雰囲気。
+カメラはゆっくり後ろから追いかける感じで。</pre>
+    </div>
+    <p>「もう少し明るい時間帯に」「カメラの動きをゆっくりに」など口語で修正 → 気に入ったらダウンロード。</p>
+    <h3>つまづきポイント＆コツ</h3>
+    <ul>
+      <li><span class="strong">無料枠の制限：</span>8秒・720p・「Made with Veo」の透かし入り。Flowは1日のクレジット上限あり</li>
+      <li><span class="strong">動きは"ひとつ"に絞る：</span>「歩く」など動作を1つにすると安定。盛り込みすぎると崩れる</li>
+      <li>長尺は苦手 → まず数秒の1カットで成功体験を。文字テロップは編集アプリで後乗せが安全</li>
+    </ul>
+    <h3>完成イメージ／作例</h3>
+    <ul><li>リール／TikTokの背景クリップ・商品紹介動画・告知のオープニング数秒</li></ul>
+  </section>
+
+  <!-- STEP3 -->
+  <section class="block" id="step3">
+    <div class="badge-row"><span class="badge">STEP 03</span><span class="tool-tag">ChatGPT / Gemini など</span></div>
+    <h2>スライド作成 — 提案／自己紹介スライドを1セット作る</h2>
+    <h3>このステップでできるようになること</h3>
+    <ul>
+      <li>「テーマ」を伝えるだけで、スライドの構成と文章をAIに作ってもらえる</li>
+      <li>自己紹介・サービス提案・セミナー資料のたたき台が一瞬で用意できる</li>
+    </ul>
+    <h3>なぜ ChatGPT / Gemini？</h3>
+    <p>スライドで時間がかかるのは「構成」と「各ページの文章」。ここをAIに任せると一気にラクに。<span class="strong">構成→中身</span>の順で作るのがコツです。</p>
+    <h3>やってみよう</h3>
+    <p>例として「SNS運用サービスの提案スライド」。まず<span class="strong">構成（目次）</span>から👇</p>
+    <div class="prompt-card">
+      <div class="prompt-head"><span>プロンプト例①（構成）</span><button class="copy-btn" data-target="p-s3a">コピー</button></div>
+      <pre id="p-s3a">SNS運用代行サービスの提案スライドを作りたい。
+相手は美容サロンのオーナー。全8枚くらいで、
+表紙→課題→解決策→事例→料金→次のステップ、の流れで
+スライドの構成（各ページのタイトルと内容の要点）を作って。</pre>
+    </div>
+    <p>構成にOKを出したら、1枚ずつ中身を作らせる👇</p>
+    <div class="prompt-card">
+      <div class="prompt-head"><span>プロンプト例②（中身）</span><button class="copy-btn" data-target="p-s3b">コピー</button></div>
+      <pre id="p-s3b">3枚目「解決策」のページの本文を、箇条書き3つで作って。
+1行は短く、専門用語は使わないで。</pre>
+    </div>
+    <p>出てきた文章を Googleスライド や Canva に貼って整えれば完成。</p>
+    <h3>つまづきポイント＆コツ</h3>
+    <ul>
+      <li><span class="strong">AIは文字を詰め込みすぎる：</span>「1スライド＝メッセージ1つ」「1行は短く」と指示して削る</li>
+      <li><span class="strong">相手を必ず伝える：</span>「誰に向けた資料か」を書くと刺さる言葉で書いてくれる</li>
+      <li>デザインはAIに求めすぎず、清書ツール側で。AIには「中身」を任せる</li>
+    </ul>
+  </section>
+
+  <!-- STEP4 -->
+  <section class="block" id="step4">
+    <div class="badge-row"><span class="badge">STEP 04</span><span class="tool-tag">Codex（メイン）/ Claude Code</span></div>
+    <h2>スキル作成 — 自分の作業をAIに覚えさせる</h2>
+    <h3>「スキル」ってなに？</h3>
+    <p>毎回ゼロから指示せず、<span class="strong">「この作業はいつもこうやる」という手順をAIに登録</span>しておくこと。一度作れば「あれやって」の一言で同じ品質の作業が返ってきます。例：議事録の整形、todoの優先度づけ、SNS投稿文のテンプレ化。ここからは<span class="strong">作業のやり方そのものをAIに持たせる</span>段階です。</p>
+    <div class="callout info"><p>Codexは無料ChatGPTプランでも「Codex Mini」が1日制限つきで試せます。まず無料で触ってみるのに最適。</p></div>
+    <h3>やってみよう（Codexメイン）</h3>
+    <p>例として「メモを決まった形式の議事録に整える」スキル。まず手順を言葉にする👇</p>
+    <div class="prompt-card">
+      <div class="prompt-head"><span>プロンプト例</span><button class="copy-btn" data-target="p-s4">コピー</button></div>
+      <pre id="p-s4">打ち合わせのメモを渡すので、いつも同じフォーマットの議事録に
+整えるスキルを作りたい。フォーマットは
+「日時／参加者／決まったこと／次のアクション」の4項目。
+この作業をいつでも呼び出せるようにしたい。</pre>
+    </div>
+    <p>Codexが手順・テンプレを提案 → 保存。次からは<span class="strong">メモを貼って「議事録にして」</span>と言うだけ。ズレたら一言で微調整して育てます。</p>
+    <div class="callout tip">
+      <p><span class="strong">💡 Claude Code でやる場合</span></p>
+      <p>Claude Codeには <span class="strong">Skills</span> という仕組みがあり、手順を1つのスキルとして保存 → <code>/スキル名</code> で呼び出せます。やり方の核は同じ（言葉にする→保存→呼び出して育てる）。まず無料で触るなら Codex、保存・呼び出しをしっかり使うなら Claude Code。</p>
+    </div>
+    <h3>つまづきポイント＆コツ</h3>
+    <ul>
+      <li>いきなり大きな自動化を狙わない。「1作業＝1スキル」で小さく</li>
+      <li>"やり方"を言葉にするのが9割。人に教えるつもりで書き出す</li>
+      <li>一発で完成しない前提。使いながら「ここ直して」で育てる</li>
+    </ul>
+  </section>
+
+  <!-- STEP5 -->
+  <section class="block" id="step5">
+    <div class="badge-row"><span class="badge">STEP 05</span><span class="tool-tag">Codex（メイン）/ Claude Code</span></div>
+    <h2>ツール作成 — ブラウザで動く小さなツールを1個作る</h2>
+    <h3>最後はなぜ「ツール作成」？</h3>
+    <p>ここまでの成果物・スキルに続いて、最後は<span class="strong">「人に使ってもらえるもの」</span>を作ります。今はHTMLファイル1枚で動く小さなツールなら、コードを書けなくても<span class="strong">「○○なツールを作って」と頼むだけ</span>で形になります。</p>
+    <div class="callout info"><p>Codexは無料の「Codex Mini」から試せます。まず無料で1個作ってみましょう。</p></div>
+    <h3>やってみよう（Codexメイン）</h3>
+    <p>例として「SNS投稿の文字数カウンター」。ポイントは<span class="strong">「HTML1ファイルで」</span>と添えること👇</p>
+    <div class="prompt-card">
+      <div class="prompt-head"><span>プロンプト例</span><button class="copy-btn" data-target="p-s5">コピー</button></div>
+      <pre id="p-s5">SNS投稿用の文字数カウンターを、HTML1ファイルで作って。
+・テキストを入力すると、今の文字数がリアルタイムで表示される
+・280文字を超えたら赤字で警告
+・スマホでも見やすいシンプルなデザイン
+コードを全部まとめて1つのファイルにして。</pre>
+    </div>
+    <p>出てきたコードを <code>counter.html</code> で保存 → ダブルクリックでブラウザが開き、動きます。「色を青に」「コピーボタンを足して」など使いながら改良。</p>
+    <div class="callout tip">
+      <p><span class="strong">💡 Claude Code でやる場合</span></p>
+      <p>Claude Codeは、ファイルの作成・保存・動作確認まで自分でやってくれます。「○○なツールを作って」→ 作って確認まで。その場で「ここ直して」で書き換えてくれます。まず無料で1個なら Codex、保存や確認まで任せたいなら Claude Code。</p>
+    </div>
+    <h3>つまづきポイント＆コツ</h3>
+    <ul>
+      <li><span class="strong">「HTML1ファイルで」と頼む：</span>1ファイル完結が初心者には扱いやすい</li>
+      <li>1機能から。エラーはそのまま貼ればAIが直してくれる。完璧を求めず「動いた！」を大事に</li>
+    </ul>
+  </section>
+
+  <!-- 完走 -->
+  <section class="block finish">
+    <h2>おめでとう！5ステップ完走 🎉</h2>
+    <p>① 画像 → ② 動画 → ③ スライド（AIに作ってもらう）<br>④ スキル → ⑤ ツール（自分用の仕組みを作る）</p>
+    <p>「AIに指示を出す」「AIに作業を任せる」「AIと一緒に作る」がひと通り体験できたはず。あとはこの5つを自分の仕事に組み合わせるだけ。</p>
+    <p class="closing-line">気になったステップに戻って、自分の業務に置き換えて作り直そう。</p>
+  </section>
+
 </main>
 
-<footer>
-  <div class="wrap">AIステップアップ教材 — 手を動かして学ぶ5ステップ</div>
+<footer class="site-footer">
+  <p>AIステップアップ教材 — 手を動かして学ぶ5ステップ</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
